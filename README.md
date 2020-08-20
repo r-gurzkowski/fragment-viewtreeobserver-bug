@@ -8,6 +8,8 @@ the fragments view during `onDestroyView` callback. It started happening after u
 3. The listener is still being called after `onDestroyView` - unexpected
 
 # Code
+This code intentionally crashes the app when the scenario described above happens.
+
 ```kotlin
 class MainFragment : Fragment() {
     private val onLayoutObserver = ViewTreeObserver.OnGlobalLayoutListener {
